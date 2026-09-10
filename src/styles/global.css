@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-principal: #0a0a0b;
+  --background-secundario: #111113;
+  --cor-do-card: #18181b;
+  --cor-da-borda: #27272a;
+  --texto-principal: #fafafa;
+  --texto-secundario: #a1a1aa;
+  --texto-discreto: #71717a;
+  --accent: #3b82f6;
+  --accent-hover: #60a5fa;
+}
+
+body {
+  background-color: var(--background-principal);
+  font-family: 'Inter', sans-serif;
+}
