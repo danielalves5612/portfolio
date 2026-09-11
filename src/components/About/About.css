@@ -1,0 +1,40 @@
+.about-container{
+  padding: 20px;
+}
+
+.about-eyebrow{
+  color: var(--texto-secundario);
+  display: flex;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.about-eyebrow span{
+  color: var(--accent);
+  font-weight: bolder;
+  font-size: inherit;
+}
+
+.about-container h2{
+  color: var(--texto-principal);
+  margin-top: 15px;
+}
+
+.about-paragraphs{
+  color: var(--texto-secundario);
+  margin-top: 10px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.about-link{
+  text-decoration: none;
+  color: var(--texto-principal);
+  background-color: var(--cor-do-card);
+  padding: 12px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
