@@ -1,0 +1,97 @@
+.projects-container {
+  padding: 20px;
+  border-top: 1px solid var(--cor-da-borda);
+}
+
+.projects-eyebrow {
+  color: var(--texto-secundario);
+  display: flex;
+  gap: 15px;
+  font-size: 15px;
+}
+
+.projects-eyebrow span {
+  color: var(--accent);
+  font-weight: bolder;
+  font-size: inherit;
+}
+
+.projects-container h2 {
+  color: var(--texto-principal);
+  margin: 20px 0px;
+}
+
+.project-card {
+  background-color: var(--cor-do-card);
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image-container {
+  margin: -20px -20px 0;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.project-text {
+  margin: 15px 0px;
+}
+
+.project-text h3 {
+  color: var(--texto-principal);
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.project-text p {
+  color: var(--texto-secundario);
+  line-height: 1.6;
+}
+
+.project-stack {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 5px;
+}
+
+.project-stack span{
+  padding: 4px 3px;
+  font-size: 13px;
+  color: var(--texto-principal);
+  background-color: var(--cor-da-borda);
+  border-radius: 5px;
+}
+
+.project-actions{
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.project-actions a{
+  text-decoration: none;
+  color: var(--texto-principal);
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.view-project{
+  background-color: var(--accent);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.view-code{
+  background-color: var(--cor-da-borda);
+  padding: 10px;
+  border-radius: 8px;
+}
