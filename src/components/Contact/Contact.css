@@ -1,0 +1,68 @@
+.contact-container {
+  padding: 20px;
+  border-top: 1px solid var(--cor-da-borda);
+}
+
+.contact-eyebrow {
+  color: var(--texto-secundario);
+  display: flex;
+  gap: 15px;
+  font-size: 15px;
+}
+
+.contact-eyebrow span {
+  color: var(--accent);
+  font-weight: bolder;
+  font-size: inherit;
+}
+
+.contact-description {
+  margin: 15px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact-description h2 {
+  color: var(--texto-principal);
+}
+
+.contact-description p {
+  color: var(--texto-secundario);
+  line-height: 1.4;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.contact-actions a {
+  color: var(--texto-principal);
+  text-decoration: none;
+}
+
+.button-send-email {
+  background-color: var(--accent);
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.button-view-linkedin {
+  background-color: var(--cor-do-card);
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.button-view-linkedin img {
+  width: 17px;
+}
