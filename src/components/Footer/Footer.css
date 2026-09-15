@@ -1,0 +1,26 @@
+.footer-container{
+  padding: 20px;
+  border-top: 1px solid var(--cor-da-borda);
+}
+
+.footer-title{
+  color: var(--texto-principal);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.footer-title span{
+  color: var(--accent);
+}
+
+.footer-position{
+  color: var(--texto-secundario);
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.footer-copyright{
+  color: var(--texto-secundario);
+  font-size: 14px;
+}
