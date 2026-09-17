@@ -1,4 +1,4 @@
-.projects-container {
+.projects-section {
   padding: 20px;
   border-top: 1px solid var(--cor-da-borda);
 }
@@ -16,7 +16,7 @@
   font-size: inherit;
 }
 
-.projects-container h2 {
+.projects-section h2 {
   color: var(--texto-principal);
   margin: 20px 0px;
 }
