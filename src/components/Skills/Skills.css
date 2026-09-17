@@ -8,6 +8,7 @@
   display: flex;
   gap: 15px;
   font-size: 15px;
+  margin-bottom: 20px;
 }
 
 .skills-eyebrow span{
@@ -16,26 +17,10 @@
   font-size: inherit;
 }
 
-.skill-category-title{
-  color: var(--texto-principal);
-  display: inline-block;
-  margin: 20px 10px;
-  font-weight: bolder;
-  font-size: 17px;
-  border-left: 3px solid var(--accent);
-  padding-left: 6px;
-}
-
 .skills-grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-}
-
-.skills-grid--2{
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  gap: 0px;
 }
 
 .skill-icon {
@@ -61,12 +46,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.skill-category{
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
 }
 
 .express-icon{
