@@ -51,3 +51,9 @@
 .express-icon{
   filter: invert(1);
 }
+
+@media (min-width: 768px ){
+  .skills-grid{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

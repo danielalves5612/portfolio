@@ -1,4 +1,4 @@
-import { MenuIcon } from 'lucide-react'
+import { MenuIcon, Download } from 'lucide-react'
 import './Header.css'
 
 function Header() {
@@ -12,15 +12,15 @@ function Header() {
         <nav>
           <a href="">Sobre</a>
           <a href="">Projetos</a>
-          <a href="">Skills</a>
+          <a href="">Tecnologias</a>
           <a href="">Formação</a>
           <a href="">Contato</a>
         </nav>
 
-        <button className="button-curriculum">Baixar CV</button>
+        <a className="button-curriculum">Baixar CV<Download size={15}/></a>
       </div>
 
-      <button>
+      <button className='collapsed-menu'>
         <MenuIcon />
       </button>
     </div>

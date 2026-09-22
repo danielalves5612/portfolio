@@ -16,7 +16,7 @@
   color: var(--accent);
 }
 
-.header-container button {
+.collapsed-menu {
   border: none;
   padding: 3px;
   color: var(--texto-principal);
@@ -25,7 +25,7 @@
   transition: background-color 200ms;
 }
 
-.header-container button:hover {
+.collapsed-menu:hover {
   background-color: var(--accent);
   color: var(--texto-principal);
 }
@@ -34,4 +34,53 @@
   color: var(--texto-principal);
   font-size: 19px;
   font-weight: bolder;
+}
+
+@media (min-width: 768px){
+  .header-navigation{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .header-navigation nav{
+    display: flex;
+    gap: 10px;
+  }
+
+  .header-navigation nav > a{
+    text-decoration: none;
+    color: var(--texto-principal);
+    font-size: 13px;
+  }
+
+  .collapsed-menu{
+    display: none;
+  }
+
+  .button-curriculum{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--cor-do-card);
+    border: 1px solid var(--cor-da-borda);
+    color: var(--texto-principal);
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-container{
+    padding: 20px;
+  }
+
+  .header-container p {
+    font-size: 22px;
+  }
+
+  .header-navigation nav{
+    gap: 20px;
+  }
 }
