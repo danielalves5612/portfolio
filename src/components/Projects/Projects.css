@@ -16,9 +16,8 @@
   font-size: inherit;
 }
 
-.projects-section h2 {
+.projects-heading h2 {
   color: var(--texto-principal);
-  margin: 20px 0px;
 }
 
 .project-card {
@@ -39,10 +38,6 @@
   object-position: center;
 }
 
-.project-text {
-  margin: 15px 0px;
-}
-
 .project-text h3 {
   color: var(--texto-principal);
   font-weight: bolder;
@@ -61,7 +56,7 @@
   gap: 5px;
 }
 
-.project-stack span{
+.project-stack span {
   padding: 4px 3px;
   font-size: 13px;
   color: var(--texto-principal);
@@ -69,14 +64,13 @@
   border-radius: 5px;
 }
 
-.project-actions{
-  margin-top: 20px;
+.project-actions {
   display: flex;
   gap: 10px;
   align-items: center;
 }
 
-.project-actions a{
+.project-actions a {
   text-decoration: none;
   color: var(--texto-principal);
   display: inline-flex;
@@ -84,14 +78,101 @@
   gap: 3px;
 }
 
-.view-project{
+.view-project {
   background-color: var(--accent);
   padding: 10px;
   border-radius: 8px;
 }
 
-.view-code{
+.view-code {
   background-color: var(--cor-da-borda);
   padding: 10px;
   border-radius: 8px;
+}
+
+.badge-principal-project {
+  color: var(--accent);
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+@media (min-width: 1200px) {
+  .projects-container {
+    padding: 20px;
+  }
+
+  .project-card {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
+    border: 1px solid var(--cor-da-borda);
+    margin-top: 12px;
+  }
+
+  .project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .projects-heading p {
+    color: var(--texto-secundario);
+    font-size: 15px;
+  }
+
+  .image-container {
+    margin: 0;
+  }
+
+  .project-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .projects-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .projects-heading{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-text h3 {
+    margin-top: 10px;
+  }
+
+  .project-text p {
+    font-size: 15px;
+    line-height: 1.2rem;
+  }
+
+  .project-stack span {
+    padding: 8px 14px;
+    font-weight: bolder;
+  }
+
+  .image-container{
+    align-self: center;
+  }
+
+  .image-container img {
+    border-radius: 10px;
+  }
+
+  .view-project {
+    font-size: 14px;
+    padding: 8px 10px;
+    font-weight: bolder;
+  }
+
+  .view-code {
+    font-size: 14px;
+    padding: 8px 10px;
+    font-weight: bolder;
+  }
 }
