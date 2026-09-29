@@ -46,3 +46,37 @@
   font-size: 16px;
   font-weight: 500;
 }
+
+@media (min-width: 1200px) {
+
+  .education-container{
+    padding: 20px;
+  }
+
+  .education-content{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .education-header{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .education-heading{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .education-heading h2{
+    color: var(--texto-principal);
+  }
+
+  .education-heading p{
+    color: var(--texto-secundario);
+    font-size: 14px;
+  }
+}
