@@ -1,0 +1,101 @@
+.career-section {
+  padding: 20px;
+  border-top: 1px solid var(--cor-da-borda);
+}
+
+.career-eyebrow {
+  color: var(--texto-secundario);
+  display: flex;
+  gap: 15px;
+  font-size: 15px;
+}
+
+.career-eyebrow span {
+  font-size: inherit;
+  font-weight: bolder;
+  color: var(--accent);
+}
+
+.education-card,
+.experience-card {
+  margin: 16px 0;
+  display: flex;
+  gap: 14px;
+}
+
+.education-icon,
+.experience-icon {
+  color: var(--accent);
+  background-color: var(--cor-do-card);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.education-info,
+.experience-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.education-title,
+.experience-title {
+  color: var(--texto-principal);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.education-description,
+.experience-description,
+.experience-meta {
+  color: var(--texto-secundario);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+@media (min-width: 1200px) {
+
+  .career-container {
+    padding: 20px;
+  }
+
+  .career-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .career-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .career-heading h2 {
+    color: var(--texto-principal);
+  }
+
+  .career-heading p {
+    color: var(--texto-secundario);
+    font-size: 14px;
+  }
+
+  .education-content,
+  .experience-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .education-content h3,
+  .experience-content h3 {
+    color: var(--texto-principal);
+    font-size: 15px;
+  }
+
+  .career-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+  }
+}
