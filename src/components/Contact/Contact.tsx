@@ -1,6 +1,6 @@
 import './Contact.css'
 import Linkedin from '../../assets/contact/linkedin/linkedin-original.svg'
-import { Mail, Send } from 'lucide-react'
+import { Mail, Send, MapPin } from 'lucide-react'
 
 function Contact() {
   return (
@@ -30,9 +30,18 @@ function Contact() {
               LinkedIn
             </a>
           </div>
+
+          <div className="contact-info">
+            <p>Foco em desenvolvimento Full Stack com React e Node.js</p>
+
+            <p className='contact-location'>
+              <MapPin size={15} />
+              São Paulo, SP • Remoto, híbrido ou presencial
+            </p>
+          </div>
         </div>
         <form className="contact-form">
-          <div className='message-form'>Responderei assim que possível.</div>
+          <div className="message-form">Responderei assim que possível.</div>
           <div className="form-group">
             <label htmlFor="name">Nome:</label>
             <input
