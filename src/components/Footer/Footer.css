@@ -25,7 +25,7 @@
   font-size: 14px;
 }
 
-@media screen {
+@media (min-width: 768px) {
   .footer-container {
     display: flex;
     justify-content: space-between;
