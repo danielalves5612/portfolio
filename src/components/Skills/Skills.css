@@ -94,8 +94,11 @@
     gap: 20px;
   }
 
-  .skills-more span {
+  .skills-more {
     display: block;
+  }
+
+  .skills-more span {
     color: var(--accent);
     font-size: 15px;
     font-weight: bolder;
