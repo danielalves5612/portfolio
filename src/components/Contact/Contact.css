@@ -71,6 +71,10 @@
   display: none;
 }
 
+.contact-info{
+  display: none;
+}
+
 @media (min-width: 768px) {
   .contact-info {
     margin-top: 25px;
