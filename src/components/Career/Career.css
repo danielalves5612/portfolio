@@ -53,6 +53,28 @@
   line-height: 1.4;
 }
 
+.career-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+.career-heading h2 {
+  color: var(--texto-principal);
+}
+
+.career-heading p {
+  color: var(--texto-secundario);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.education-content h3,
+.experience-content h3 {
+  color: var(--texto-principal);
+  font-size: 15px;
+}
+
 @media (min-width: 768px) {
   .career-heading {
     display: flex;
