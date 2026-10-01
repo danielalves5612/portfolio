@@ -52,6 +52,30 @@
   filter: invert(1);
 }
 
+.skills-eyebrow {
+  margin-bottom: 10px;
+}
+
+.skills-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 15px;
+}
+
+.skills-heading h2 {
+  color: var(--texto-principal);
+}
+
+.skills-heading p {
+  color: var(--texto-secundario);
+  font-size: 14px;
+}
+
+.skills-more{
+  display: none;
+}
+
 @media (min-width: 768px) {
   .skills-heading-row {
     display: flex;
@@ -65,20 +89,6 @@
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .skills-heading {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
-
-  .skills-eyebrow {
-    margin-bottom: 10px;
-  }
-
-  .skills-heading h2 {
-    color: var(--texto-principal);
-  }
-
   .skills-heading p {
     color: var(--texto-secundario);
     font-size: 14px;
@@ -87,7 +97,6 @@
   .skills-more span {
     display: none;
   }
-
 }
 
 @media (min-width: 1200px) {
