@@ -76,26 +76,8 @@
 }
 
 @media (min-width: 768px) {
-  .career-heading {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  .career-heading h2 {
-    color: var(--texto-principal);
-  }
-
   .career-heading p {
-    color: var(--texto-secundario);
-    font-size: 14px;
     margin-bottom: 20px;
-  }
-
-  .education-content h3,
-  .experience-content h3 {
-    color: var(--texto-principal);
-    font-size: 15px;
   }
 }
 
@@ -110,32 +92,11 @@
     gap: 10px;
   }
 
-  .career-heading {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .career-heading h2 {
-    color: var(--texto-principal);
-  }
-
-  .career-heading p {
-    color: var(--texto-secundario);
-    font-size: 14px;
-  }
-
   .education-content,
   .experience-content {
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
-
-  .education-content h3,
-  .experience-content h3 {
-    color: var(--texto-principal);
-    font-size: 15px;
   }
 
   .career-content {

@@ -88,33 +88,4 @@
   .about-content {
     max-width: 540px;
   }
-
-  .about-values {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  .about-card {
-    background-color: var(--cor-do-card);
-    border: 1px solid var(--cor-da-borda);
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-
-  .about-title {
-    color: var(--texto-principal);
-  }
-
-  .about-card p {
-    color: var(--texto-secundario);
-    font-size: 14px;
-  }
-
-  .about-card span {
-    color: var(--accent);
-  }
 }

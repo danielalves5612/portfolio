@@ -103,48 +103,48 @@
   font-size: 15px;
 }
 
-@media screen {
-  .projects-heading {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
+.image-container {
+  margin-bottom: 10px;
+}
 
-  .project-text h3 {
-    margin-top: 10px;
-  }
+.project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 15px 0px;
+}
 
+.view-project {
+  font-size: 14px;
+  padding: 8px 10px;
+  font-weight: bolder;
+}
+
+.view-code {
+  font-size: 14px;
+  padding: 8px 10px;
+  font-weight: bolder;
+}
+
+.project-stack span {
+  padding: 8px 14px;
+  font-weight: bolder;
+}
+
+.project-text h3 {
+  margin-top: 10px;
+}
+
+.projects-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: 768px) {
   .project-text p {
     font-size: 15px;
     line-height: 1.2rem;
-  }
-
-  .image-container {
-    margin-bottom: 10px;
-  }
-
-  .project-stack {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin: 15px 0px;
-  }
-
-  .project-stack span {
-    padding: 8px 14px;
-    font-weight: bolder;
-  }
-
-  .view-project {
-    font-size: 14px;
-    padding: 8px 10px;
-    font-weight: bolder;
-  }
-
-  .view-code {
-    font-size: 14px;
-    padding: 8px 10px;
-    font-weight: bolder;
   }
 }
 
@@ -164,62 +164,15 @@
   .project-content {
     display: flex;
     flex-direction: column;
-    gap: 20px;
   }
 
   .image-container {
     margin: 0;
   }
 
-  .project-stack {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-
   .projects-header {
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
-
-  .projects-heading {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .project-text h3 {
-    margin-top: 10px;
-  }
-
-  .project-text p {
-    font-size: 15px;
-    line-height: 1.2rem;
-  }
-
-  .project-stack span {
-    padding: 8px 14px;
-    font-weight: bolder;
-  }
-
-  .image-container {
-    align-self: center;
-  }
-
-  .image-container img {
-    border-radius: 10px;
-  }
-
-  .view-project {
-    font-size: 14px;
-    padding: 8px 10px;
-    font-weight: bolder;
-  }
-
-  .view-code {
-    font-size: 14px;
-    padding: 8px 10px;
-    font-weight: bolder;
   }
 }
