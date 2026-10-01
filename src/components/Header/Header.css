@@ -52,6 +52,11 @@
     text-decoration: none;
     color: var(--texto-principal);
     font-size: 13px;
+    transition: color 200ms;
+  }
+
+  .header-navigation nav > a:hover{
+    color: var(--accent);
   }
 
   .collapsed-menu{
@@ -68,6 +73,14 @@
     padding: 8px 12px;
     border-radius: 8px;
     font-size: 15px;
+    transition:
+      background-color 200ms
+      border-color 200ms;
+  }
+
+  .button-curriculum:hover{
+    background-color: var(--accent);
+    border-color: var(--accent);
   }
 }
 

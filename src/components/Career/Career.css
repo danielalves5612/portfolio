@@ -21,6 +21,14 @@
   margin: 16px 0;
   display: flex;
   gap: 14px;
+  border: 3px solid transparent;
+  transition: border-left-color 200ms padding-left 200ms;
+}
+
+.education-card:hover,
+.experience-card:hover{
+  border-left-color: var(--accent);
+  padding-left: 10px;
 }
 
 .education-icon,

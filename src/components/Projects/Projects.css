@@ -69,6 +69,11 @@
   color: var(--texto-principal);
   background-color: var(--cor-da-borda);
   border-radius: 5px;
+  transition: background-color 200ms, color 200ms;
+}
+
+.project-stack span:hover{
+  background-color: var(--accent);
 }
 
 .project-actions {
@@ -118,12 +123,26 @@
   font-size: 14px;
   padding: 8px 10px;
   font-weight: bolder;
+  border: 1px solid transparent;
+  transition: border-color 200ms background-color 200ms;
+}
+
+.view-project:hover{
+  background-color: var(--cor-do-card);
+  border-color: var(--accent);
 }
 
 .view-code {
   font-size: 14px;
   padding: 8px 10px;
   font-weight: bolder;
+  border: 1px solid transparent;
+  transition: border-color 200ms background-color 200ms;
+}
+
+.view-code:hover{
+  background-color: var(--accent);
+  border: 1px solid var(--accent);
 }
 
 .project-stack span {

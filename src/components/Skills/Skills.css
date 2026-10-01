@@ -28,6 +28,14 @@
   padding: 20px;
   border-radius: 8px;
   display: flex;
+  transform:
+    background-color 200ms
+    transform 200ms;
+}
+
+.skill-icon:hover{
+  background-color: var(--accent);
+  transform: translateY(-3px);
 }
 
 .skill-icon img {

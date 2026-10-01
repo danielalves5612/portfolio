@@ -31,6 +31,7 @@
   text-decoration: none;
   color: var(--texto-principal);
   background-color: var(--cor-do-card);
+  border: 1px solid transparent;
   padding: 12px;
   border-radius: 8px;
   display: inline-flex;
@@ -38,6 +39,12 @@
   justify-content: center;
   gap: 5px;
   font-weight: bolder;
+  transition: border-color 200ms background-color 200ms;
+}
+
+.about-link:hover{
+  background-color: var(--accent);
+  border: 1px solid var(--accent);
 }
 
 .about-values{
@@ -60,6 +67,14 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+    transition:
+      border-color 200ms
+      transform 200ms;
+  }
+
+  .about-card:hover{
+    border: 1px solid var(--accent);
+    transform: translateY(-2px);
   }
 
   .about-title {

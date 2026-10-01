@@ -51,6 +51,13 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  border: 1px solid transparent;
+  transition: background-color 200ms border-color 200ms;
+}
+
+.button-send-email:hover {
+  background-color: var(--cor-do-card);
+  border: 1px solid var(--accent);
 }
 
 .button-view-linkedin {
@@ -61,6 +68,13 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  border: 1px solid transparent;
+  transition: background-color 200ms border-color 200ms;
+}
+
+.button-view-linkedin:hover {
+  background-color: var(--accent);
+  border: 1px solid var(--accent);
 }
 
 .button-view-linkedin img {
@@ -135,6 +149,17 @@
     padding: 10px;
   }
 
+  .contact-form input,
+  .contact-form textarea {
+    transition: border-color 200ms;
+  }
+
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: var(--accent);
+    outline: none;
+  }
+
   .button-submit {
     background-color: var(--accent);
     padding: 7px 12px;
@@ -145,6 +170,14 @@
     align-items: center;
     gap: 5px;
     font-weight: bolder;
+    border: 1px solid transparent;
+    transition: background-color 200ms border-color 200ms transform 200ms;
+  }
+
+  .button-submit:hover {
+    background-color: var(--accent-hover);
+    border: 1px solid var(--accent-hover);
+    transform: translateY(-2px);
   }
 
   .form-group {
