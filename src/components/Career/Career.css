@@ -53,8 +53,31 @@
   line-height: 1.4;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
+  .career-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .career-heading h2 {
+    color: var(--texto-principal);
+  }
 
+  .career-heading p {
+    color: var(--texto-secundario);
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .education-content h3,
+  .experience-content h3 {
+    color: var(--texto-principal);
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
   .career-container {
     padding: 20px;
   }
@@ -93,7 +116,7 @@
     font-size: 15px;
   }
 
-  .career-content{
+  .career-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 20px;
