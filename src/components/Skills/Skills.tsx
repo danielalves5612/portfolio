@@ -15,9 +15,23 @@ function Skills() {
   return (
     <section className="skills-section">
       <div className="skills-container container">
-        <span className="skills-eyebrow">
-          <span>03</span>Tecnologias
-        </span>
+        <div className="skills-header">
+          <div className="skills-eyebrow">
+            <span>03</span>Tecnologias
+          </div>
+
+          <div className="skills-heading-row">
+            <div className="skills-heading">
+              <h2>Tecnologias e ferramentas</h2>
+              <p>
+                Principais tecnologias que utilizo nos meus projetos e estudos.
+              </p>
+            </div>
+            <div className="skills-more">
+              <span>Sempre aprendendo mais...</span>
+            </div>
+          </div>
+        </div>
 
         <div className="skills-grid">
           <div className="skill">
@@ -28,31 +42,19 @@ function Skills() {
           </div>
           <div className="skill">
             <span className="skill-icon">
-              <img src={JavaScript} alt="Logo do JavaScript" />
-            </span>
-            <span className="skill-name">JavaScript</span>
-          </div>
-          <div className="skill">
-            <span className="skill-icon">
               <img src={TypeScript} alt="Logo do TypeScript" />
             </span>
             <span className="skill-name">TypeScript</span>
           </div>
           <div className="skill">
             <span className="skill-icon">
-              <img src={Html} alt="Logo do HTML" />
+              <img src={JavaScript} alt="Logo do JavaScript" />
             </span>
-            <span className="skill-name">HTML</span>
+            <span className="skill-name">JavaScript</span>
           </div>
           <div className="skill">
             <span className="skill-icon">
-              <img src={Css} alt="Logo do CSS" />
-            </span>
-            <span className="skill-name">CSS</span>
-          </div>
-          <div className="skill">
-            <span className="skill-icon">
-              <img src={NodeJs} alt="Logo do Node.js" />
+              <img src={NodeJs} alt="Logo do NodeJs" />
             </span>
             <span className="skill-name">Node.js</span>
           </div>
@@ -80,15 +82,27 @@ function Skills() {
           </div>
           <div className="skill">
             <span className="skill-icon">
-              <img src={Github} alt="Logo do Github" />
+              <img src={Html} alt="Logo do Html" />
             </span>
-            <span className="skill-name">GitHub</span>
+            <span className="skill-name">HTML</span>
+          </div>
+          <div className="skill">
+            <span className="skill-icon">
+              <img src={Css} alt="Logo do CSS" />
+            </span>
+            <span className="skill-name">CSS</span>
           </div>
           <div className="skill">
             <span className="skill-icon">
               <img src={Git} alt="Logo do Git" />
             </span>
             <span className="skill-name">Git</span>
+          </div>
+          <div className="skill">
+            <span className="skill-icon">
+              <img src={Github} alt="Logo do Github" />
+            </span>
+            <span className="skill-name">GitHub</span>
           </div>
         </div>
       </div>
