@@ -1,9 +1,9 @@
-.skills-section{
+.skills-section {
   padding: 20px;
   border-top: 1px solid var(--cor-da-borda);
 }
 
-.skills-eyebrow{
+.skills-eyebrow {
   color: var(--texto-secundario);
   display: flex;
   gap: 15px;
@@ -11,13 +11,13 @@
   margin-bottom: 20px;
 }
 
-.skills-eyebrow span{
+.skills-eyebrow span {
   color: var(--accent);
   font-weight: bolder;
   font-size: inherit;
 }
 
-.skills-grid{
+.skills-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
@@ -30,17 +30,17 @@
   display: flex;
 }
 
-.skill-icon img{
+.skill-icon img {
   width: 40px;
   height: 40px;
 }
 
-.skill-name{
+.skill-name {
   color: var(--texto-principal);
   font-size: 15px;
 }
 
-.skill{
+.skill {
   display: flex;
   gap: 10px;
   flex-direction: column;
@@ -48,58 +48,90 @@
   align-items: center;
 }
 
-.express-icon{
+.express-icon {
   filter: invert(1);
 }
 
-@media (min-width: 768px ){
-  .skills-grid{
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media (min-width: 1200px) {
-  .skills-container{
-    padding: 20px;
-  }
-
-  .skills-grid{
-    display: flex;
-    gap: 20px;
-  }
-
-  .skills-heading-row{
+@media (min-width: 768px) {
+  .skills-heading-row {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
   }
+}
 
-  .skills-heading{
+@media (min-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .skills-heading {
     display: flex;
     flex-direction: column;
     gap: 6px;
   }
 
-  .skills-eyebrow{
+  .skills-eyebrow {
     margin-bottom: 10px;
   }
 
-  .skills-heading h2{
+  .skills-heading h2 {
     color: var(--texto-principal);
   }
 
-  .skills-heading p{
+  .skills-heading p {
     color: var(--texto-secundario);
     font-size: 14px;
   }
 
-  .skills-more span{
+  .skills-more span {
+    display: none;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .skills-container {
+    padding: 20px;
+  }
+
+  .skills-grid {
+    display: flex;
+    gap: 20px;
+  }
+
+  .skills-heading-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .skills-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .skills-eyebrow {
+    margin-bottom: 10px;
+  }
+
+  .skills-heading h2 {
+    color: var(--texto-principal);
+  }
+
+  .skills-heading p {
+    color: var(--texto-secundario);
+    font-size: 14px;
+  }
+
+  .skills-more span {
     color: var(--accent);
     font-size: 15px;
     font-weight: bolder;
   }
 
-  .skill-icon{
+  .skill-icon {
     padding: 15px;
   }
 }
