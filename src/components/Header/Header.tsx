@@ -1,14 +1,25 @@
-import { MenuIcon, Download } from 'lucide-react'
+import { MenuIcon, Download, X } from 'lucide-react'
 import './Header.css'
+import { useState } from 'react'
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  const handleClick = () => {
+    setMenuOpen((prev) => !prev)
+  }
+
   return (
     <div className="header-container">
       <p>
         Daniel <span>Alves</span>
       </p>
 
-      <div className="header-navigation">
+      <button onClick={handleClick} className="collapsed-menu">
+        {menuOpen ? <X/> : <MenuIcon/>}
+      </button>
+
+      <div className={`header-navigation ${menuOpen ? 'active' : ''}`}>
         <nav>
           <a href="">Sobre</a>
           <a href="">Projetos</a>
@@ -17,12 +28,11 @@ function Header() {
           <a href="">Contato</a>
         </nav>
 
-        <a className="button-curriculum">Baixar CV<Download size={15}/></a>
+        <a className="button-curriculum">
+          Baixar CV
+          <Download size={15} />
+        </a>
       </div>
-
-      <button className='collapsed-menu'>
-        <MenuIcon />
-      </button>
     </div>
   )
 }

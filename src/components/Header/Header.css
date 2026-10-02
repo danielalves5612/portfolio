@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 10px 10px 10px 20px;
   align-items: center;
   border-bottom: 1px solid var(--cor-da-borda);
@@ -9,11 +10,53 @@
 }
 
 .header-navigation {
-  display: none;
+  flex-basis: 100%;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(-3px);
+
+  transition:
+    max-height 200ms,
+    opacity 200ms,
+    transform 200ms;
+}
+
+.header-navigation.active {
+  max-height: 350px;
+  opacity: 1;
+  transform: translateY(0);
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--cor-da-borda);
+}
+
+.header-navigation nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 15px;
+}
+
+.header-navigation nav > a {
+  text-decoration: none;
+  color: var(--texto-principal);
+  padding: 0 10px;
+  transition: color 200ms;
+}
+
+.header-navigation nav > a:hover {
+  color: var(--accent);
 }
 
 .header-container span {
   color: var(--accent);
+}
+
+.header-container p {
+  color: var(--texto-principal);
+  font-size: 19px;
+  font-weight: bolder;
 }
 
 .collapsed-menu {
@@ -30,40 +73,49 @@
   color: var(--texto-principal);
 }
 
-.header-container p {
+.button-curriculum {
   color: var(--texto-principal);
-  font-size: 19px;
-  font-weight: bolder;
+  background-color: var(--accent);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (min-width: 768px){
-  .header-navigation{
+@media (min-width: 768px) {
+  .header-navigation {
     display: flex;
+    flex-basis: auto;
+    max-height: none;
+    opacity: 1;
+    overflow: visible;
+    transform: none;
+    margin: 0;
+    padding: 0;
+    border-top: none;
     gap: 12px;
     align-items: center;
   }
 
-  .header-navigation nav{
-    display: flex;
+  .header-navigation nav {
+    flex-direction: row;
     gap: 10px;
+    margin-bottom: 0;
   }
 
-  .header-navigation nav > a{
-    text-decoration: none;
-    color: var(--texto-principal);
+  .header-navigation nav > a {
+    padding: 0;
     font-size: 13px;
-    transition: color 200ms;
   }
 
-  .header-navigation nav > a:hover{
-    color: var(--accent);
-  }
-
-  .collapsed-menu{
+  .collapsed-menu {
     display: none;
   }
 
-  .button-curriculum{
+  .button-curriculum {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -73,19 +125,20 @@
     padding: 8px 12px;
     border-radius: 8px;
     font-size: 15px;
+
     transition:
-      background-color 200ms
+      background-color 200ms,
       border-color 200ms;
   }
 
-  .button-curriculum:hover{
+  .button-curriculum:hover {
     background-color: var(--accent);
     border-color: var(--accent);
   }
 }
 
 @media (min-width: 1200px) {
-  .header-container{
+  .header-container {
     padding: 20px;
   }
 
@@ -93,7 +146,7 @@
     font-size: 22px;
   }
 
-  .header-navigation nav{
+  .header-navigation nav {
     gap: 20px;
   }
 }
