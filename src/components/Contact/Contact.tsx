@@ -4,7 +4,7 @@ import { Mail, Send, MapPin } from 'lucide-react'
 
 function Contact() {
   return (
-    <section className="contact-section">
+    <section className="contact-section" id='contact'>
       <div className="contact-container container">
         <div className="contact-content">
           <div className="contact-eyebrow">

@@ -16,6 +16,10 @@
   --accent-hover: #60a5fa;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--background-principal);
   font-family: 'Inter', sans-serif;

@@ -7,6 +7,9 @@
   align-items: center;
   border-bottom: 1px solid var(--cor-da-borda);
   background-color: var(--background-secundario);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .header-navigation {

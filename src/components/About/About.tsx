@@ -3,7 +3,7 @@ import { ArrowUpRight, Target, BookOpen, Lightbulb, Users } from 'lucide-react'
 
 function About() {
   return (
-    <section className="about-section">
+    <section className="about-section" id='about'>
       <div className="about-container container">
         <div className="about-content">
           <span className="about-eyebrow">

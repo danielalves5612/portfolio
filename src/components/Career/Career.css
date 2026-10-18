@@ -1,6 +1,7 @@
 .career-section {
   padding: 20px;
   border-top: 1px solid var(--cor-da-borda);
+  scroll-margin-top: 78px;
 }
 
 .career-eyebrow {
@@ -26,7 +27,7 @@
 }
 
 .education-card:hover,
-.experience-card:hover{
+.experience-card:hover {
   border-left-color: var(--accent);
   padding-left: 10px;
 }

@@ -1,6 +1,7 @@
 .projects-section {
   padding: 20px;
   border-top: 1px solid var(--cor-da-borda);
+  scroll-margin-top: 78px;
 }
 
 .projects-eyebrow {
@@ -69,10 +70,12 @@
   color: var(--texto-principal);
   background-color: var(--cor-da-borda);
   border-radius: 5px;
-  transition: background-color 200ms, color 200ms;
+  transition:
+    background-color 200ms,
+    color 200ms;
 }
 
-.project-stack span:hover{
+.project-stack span:hover {
   background-color: var(--accent);
 }
 
@@ -127,7 +130,7 @@
   transition: border-color 200ms background-color 200ms;
 }
 
-.view-project:hover{
+.view-project:hover {
   background-color: var(--cor-do-card);
   border-color: var(--accent);
 }
@@ -140,7 +143,7 @@
   transition: border-color 200ms background-color 200ms;
 }
 
-.view-code:hover{
+.view-code:hover {
   background-color: var(--accent);
   border: 1px solid var(--accent);
 }

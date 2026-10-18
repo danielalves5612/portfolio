@@ -21,11 +21,11 @@ function Header() {
 
       <div className={`header-navigation ${menuOpen ? 'active' : ''}`}>
         <nav>
-          <a href="">Sobre</a>
-          <a href="">Projetos</a>
-          <a href="">Tecnologias</a>
-          <a href="">Formação</a>
-          <a href="">Contato</a>
+          <a href="#about">Sobre</a>
+          <a href="#projects">Projetos</a>
+          <a href="#skills">Tecnologias</a>
+          <a href="#carrer">Carreira</a>
+          <a href="#contact">Contato</a>
         </nav>
 
         <a className="button-curriculum">

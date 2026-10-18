@@ -3,7 +3,7 @@ import { GraduationCap, BookOpen, Briefcase } from 'lucide-react'
 
 function Career() {
   return (
-    <section className="career-section">
+    <section className="career-section" id='carrer'>
       <div className="career-container container">
         <div className="career-header">
           <div className="career-eyebrow">
