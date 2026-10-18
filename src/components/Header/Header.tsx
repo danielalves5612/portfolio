@@ -9,22 +9,25 @@ function Header() {
   useEffect(() => {
     const arrayIds = ['about', 'projects', 'skills', 'carrer', 'contact']
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if(entry.isIntersecting){
-          setActiveSection(entry.target.id)
-        }
-      })
-    }, {
-      threshold: 0.5,
-    })
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id)
+          }
+        })
+      },
+      {
+        threshold: 0.5,
+      },
+    )
 
-    arrayIds.forEach(elemento => {
+    arrayIds.forEach((elemento) => {
       const section = document.getElementById(elemento)
-      if(section){
+      if (section) {
         observer.observe(section)
       }
-    });
+    })
 
     return () => {
       observer.disconnect()
@@ -79,7 +82,11 @@ function Header() {
           </a>
         </nav>
 
-        <a className="button-curriculum">
+        <a
+          className="button-curriculum"
+          href="/curriculo_daniel_alves.pdf"
+          download
+        >
           Baixar CV
           <Download size={15} />
         </a>

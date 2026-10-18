@@ -4,7 +4,7 @@ import { Mail, Send, MapPin } from 'lucide-react'
 
 function Contact() {
   return (
-    <section className="contact-section" id='contact'>
+    <section className="contact-section" id="contact">
       <div className="contact-container container">
         <div className="contact-content">
           <div className="contact-eyebrow">
@@ -25,7 +25,11 @@ function Contact() {
               <Mail size={17} />
               Enviar e-mail
             </a>
-            <a href="" className="button-view-linkedin">
+            <a
+              href="https://www.linkedin.com/in/daniel-alves-souza/"
+              target="_blank"
+              className="button-view-linkedin"
+            >
               <img src={Linkedin} alt="Logo do Linkedin" />
               LinkedIn
             </a>
@@ -34,7 +38,7 @@ function Contact() {
           <div className="contact-info">
             <p>Foco em desenvolvimento Full Stack com React e Node.js</p>
 
-            <p className='contact-location'>
+            <p className="contact-location">
               <MapPin size={15} />
               São Paulo, SP • Remoto, híbrido ou presencial
             </p>
