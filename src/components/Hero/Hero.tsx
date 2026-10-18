@@ -17,11 +17,15 @@ function Hero() {
             estruturadas.
           </p>
           <div className="hero-actions">
-            <a href="" className="hero-button hero-button--primary">
+            <a href="#projects" className="hero-button hero-button--primary">
               Ver Projetos
               <ArrowRight size={17} />
             </a>
-            <a href="" className="hero-button hero-button--secondary">
+            <a
+              href="https://github.com/danielalves5612"
+              target='_blank'
+              className="hero-button hero-button--secondary"
+            >
               Github
               <ArrowUpRight size={17} />
             </a>

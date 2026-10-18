@@ -5,7 +5,7 @@ import PhotoAppointments from '../../assets/images/appointments.png'
 
 function Projects() {
   return (
-    <section className="projects-section">
+    <section className="projects-section" id='projects'>
       <div className=" projects-container container">
         <div className="projects-header">
           <div className="projects-eyebrow">

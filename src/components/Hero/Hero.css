@@ -50,11 +50,13 @@
 .hero-button--primary {
   color: var(--texto-principal);
   background-color: var(--accent);
-  transition: background-color 200ms;
+  border: 1px solid transparent;
+  transition: background-color 200ms border-color 200ms;
 }
 
 .hero-button--primary:hover {
-  background-color: var(--accent-hover);
+  background-color: var(--cor-do-card);
+  border-color: var(--accent);
 }
 
 .hero-button--secondary {
@@ -65,7 +67,7 @@
 }
 
 .hero-button--secondary:hover {
-  background-color: var(--background-secundario);
+  background-color: var(--accent);
   border-color: var(--accent);
 }
 

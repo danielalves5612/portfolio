@@ -13,7 +13,7 @@ import Git from '../../assets/skills/git/git-original.svg'
 
 function Skills() {
   return (
-    <section className="skills-section">
+    <section className="skills-section" id='skills'>
       <div className="skills-container container">
         <div className="skills-header">
           <div className="skills-eyebrow">
