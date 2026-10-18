@@ -85,7 +85,7 @@ It includes required field validation, asynchronous form submission, loading fee
 
 ## Live Demo
 
-**Coming soon — deployment on Vercel.**
+- [View Portfolio](https://portfolio-liard-sigma-58.vercel.app/)
 
 ## Contact
 
